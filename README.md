@@ -36,6 +36,18 @@ To run just the mysql tests
 grunt test-mysql
 ```
 
+### Running Tests with Docker
+
+In order to provide a consistent test environment and make it easier to test,
+we have included a `Dockerfile` and a `docker-compose.yml` to make it easy to
+test in an isolated environment. You can do so with:
+
+```sh
+docker-compose build
+docker-compose up -d
+docker-compose logs -f patio
+```
+
 ### Why Use Patio?
 
 Patio is different because it allows the developers to choose the level of abtraction they are comfortable with.
@@ -257,6 +269,3 @@ All the code for this example can be found [here](https://github.com/C2FO/patio/
     * [update](http://c2fo.github.com/patio/patio_Dataset.html#update)
     * [remove](http://c2fo.github.com/patio/patio_Dataset.html#remove)
     * [query](http://c2fo.github.com/patio/patio_Dataset.html#filter)
-
-
-
