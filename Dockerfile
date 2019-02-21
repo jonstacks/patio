@@ -15,4 +15,4 @@ RUN npm install -g grunt-cli && \
 COPY . .
 
 ENTRYPOINT ["./docker-entrypoint.sh"]
-CMD ["test"]
+CMD ["info"]
