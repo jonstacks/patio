@@ -26,3 +26,4 @@ services:
     volumes:
     - "./lib:/patio/lib:ro"
     - "./test:/patio/test:ro"
+    - "./info.js:/patio/info.js"

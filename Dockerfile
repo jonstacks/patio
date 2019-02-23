@@ -4,7 +4,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 # Install netcat, and mysql/postgres so we can create additional DBs
 RUN apt-get update && \
-    apt-get -y install netcat build-essential postgresql mysql-server && \
+    apt-get -y install netcat build-essential postgresql mysql-server nano && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
